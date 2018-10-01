@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * INSTRUCTIONS.
  * 
@@ -27,7 +28,22 @@ public class ProblemSet3 {
 	 */
 	
 	public static void main(String[] args) {
-			
+		ProblemSet3 ps3 = new ProblemSet3();
+		ps3.dateFashion(5, 10);
+		ps3.dateFashion(5, 2);
+		ps3.dateFashion(5, 5);
+		System.out.println("");
+		ps3.fizzString("fig");
+		ps3.fizzString("dib");
+		ps3.fizzString("fib");
+		System.out.println("");
+		ps3.squirrelPlay(70, false);
+		ps3.squirrelPlay(95, false);
+		ps3.squirrelPlay(95, true);
+		System.out.println("");
+		ps3.fizzStringAgain(1);
+		ps3.fizzStringAgain(2);
+		ps3.fizzStringAgain(3);
 	}
 	
 	/*
@@ -47,7 +63,25 @@ public class ProblemSet3 {
 	 */
 	
 	public void dateFashion(int you, int date) {
-		
+		int result = 0;
+		if (you <= 2 || date <= 2) {
+			result = 0;
+		} else if (you >= 8 || date >= 8) {
+			result = 2;
+		} else {
+			result = 1;
+		}
+		switch (result) {
+		case 0:
+			System.out.println("NO");
+			break;
+		case 1:
+			System.out.println("MAYBE");
+			break;
+		case 2:
+			System.out.println("YES");
+			break;
+		}
 	}
 	
 	/*
@@ -62,7 +96,16 @@ public class ProblemSet3 {
 	 */
 	
 	public void fizzString(String str) {
-		
+		int len = str.length();
+		if (str.charAt(0) == 'f' && str.charAt(len-1) == 'b') {
+			System.out.println("FIZZBUZZ");
+		} else if (str.charAt(len-1) == 'b') {
+			System.out.println("BUZZ");
+		} else if (str.charAt(0) == 'f') {
+			System.out.println("FIZZ");
+		} else {
+			System.out.println(str);
+		} 
 	}
 	
 	/*
@@ -78,6 +121,19 @@ public class ProblemSet3 {
 	 */
 	
 	public void squirrelPlay(int temp, boolean isSummer) {
+		if (isSummer == true) {
+			if (temp >= 60 && temp <= 100) {
+				System.out.println("YES");
+			} else {
+				System.out.println("NO");
+			}
+		} else {
+			if (temp >= 60 && temp <= 90) {
+				System.out.println("YES");
+			} else {
+				System.out.println("NO");
+			}
+		}
 		
 	}
 	
@@ -93,7 +149,17 @@ public class ProblemSet3 {
 	 */
 	
 	public void fizzStringAgain(int n) {
-		
+		String number;
+		if ((n % 3) == 0 && (n % 5) == 0) {
+			number = "FIZZBUZZ";
+		} else if ((n % 5) == 0) {
+			number = "BUZZ";
+		} else if ((n % 3) == 0) {
+			number = "FIZZ";
+		} else {
+			number = n + "";
+		}
+		System.out.println(number + "!");
 	}
 	
 	/*
