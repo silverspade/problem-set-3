@@ -29,21 +29,30 @@ public class ProblemSet3 {
 	
 	public static void main(String[] args) {
 		ProblemSet3 ps3 = new ProblemSet3();
+		System.out.println("Date Fashion: ");
 		ps3.dateFashion(5, 10);
 		ps3.dateFashion(5, 2);
 		ps3.dateFashion(5, 5);
-		System.out.println("");
+		System.out.println("Fizz String: ");
 		ps3.fizzString("fig");
 		ps3.fizzString("dib");
 		ps3.fizzString("fib");
-		System.out.println("");
+		System.out.println("Squirrel Play: ");
 		ps3.squirrelPlay(70, false);
 		ps3.squirrelPlay(95, false);
 		ps3.squirrelPlay(95, true);
-		System.out.println("");
+		System.out.println("Fizz String Again: ");
 		ps3.fizzStringAgain(1);
 		ps3.fizzStringAgain(2);
 		ps3.fizzStringAgain(3);
+		System.out.println("Make Bricks: ");
+		ps3.makeBricks(3, 1, 8);
+		ps3.makeBricks(3, 1, 9);
+		ps3.makeBricks(3, 2, 10);
+		System.out.println("");
+		ps3.loneSum(1, 2, 3);
+		ps3.loneSum(3, 2, 3);
+		ps3.loneSum(3, 3, 3);
 	}
 	
 	/*
@@ -170,11 +179,16 @@ public class ProblemSet3 {
 	 * 
 	 * makeBricks(3, 1, 8) → YES
 	 * makeBricks(3, 1, 9) → NO
-	 * akeBricks(3, 2, 10) → YES
+	 * makeBricks(3, 2, 10) → YES
 	 */
 	
 	public void makeBricks(int small, int big, int goal) {
-		
+		int size = (small * 1) + (big * 5);
+		if (size >= goal) {
+			System.out.println("YES");
+		} else {
+			System.out.println("NO");
+		}
 	}
 	
 	/*
@@ -187,7 +201,25 @@ public class ProblemSet3 {
 	 */
 	
 	public void loneSum(int a, int b, int c) {
-		
+		int sum = 0;
+		if ((a == b) && (b == c) && (a == c)) {
+			a = 0;
+			b = 0;
+			c = 0;
+		} else if ((a == b) && (b == c))  {
+			a = 0;
+			b = 0;
+		} else if (a == b) {
+			a = 0;
+		} else if (b == c) {
+			b = 0;
+		} else if (a == c) {
+			c = 0;
+		} else {
+			sum = 0;
+		}
+		sum = a + b + c;
+		System.out.println(sum);
 	}
 	
 	/*
