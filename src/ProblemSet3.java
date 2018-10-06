@@ -1,4 +1,3 @@
-import java.util.Scanner;
 /**
  * INSTRUCTIONS.
  * 
@@ -29,129 +28,7 @@ public class ProblemSet3 {
 	
 	public static void main(String[] args) {
 		ProblemSet3 ps3 = new ProblemSet3();
-		ps3.dateFashion(0, 0); // NO.
-		ps3.dateFashion(0, 1); // NO.
-		ps3.dateFashion(0, 2); // NO.
-		ps3.dateFashion(0, 3); // NO.
-		ps3.dateFashion(0, 4); // NO.
-		ps3.dateFashion(0, 5); // NO.
-		ps3.dateFashion(0, 6); // NO.
-		ps3.dateFashion(0, 7); // NO.
-		ps3.dateFashion(0, 8); // NO.
-		ps3.dateFashion(0, 9); // NO.
-		ps3.dateFashion(0, 10); // NO.
-		ps3.dateFashion(1, 0); // NO.
-		ps3.dateFashion(1, 1); // NO.
-		ps3.dateFashion(1, 2); // NO.
-		ps3.dateFashion(1, 3); // NO.
-		ps3.dateFashion(1, 4); // NO.
-		ps3.dateFashion(1, 5); // NO.
-		ps3.dateFashion(1, 6); // NO.
-		ps3.dateFashion(1, 7); // NO.
-		ps3.dateFashion(1, 8); // NO.
-		ps3.dateFashion(1, 9); // NO.
-		ps3.dateFashion(1, 10); // NO.
-		ps3.dateFashion(2, 0); // NO.
-		ps3.dateFashion(2, 1); // NO.
-		ps3.dateFashion(2, 2); // NO.
-		ps3.dateFashion(2, 3); // NO.
-		ps3.dateFashion(2, 4); // NO.
-		ps3.dateFashion(2, 5); // NO.
-		ps3.dateFashion(2, 6); // NO.
-		ps3.dateFashion(2, 7); // NO.
-		ps3.dateFashion(2, 8); // NO.
-		ps3.dateFashion(2, 9); // NO.
-		ps3.dateFashion(2, 10); // NO.
-		ps3.dateFashion(3, 0); // NO.
-		ps3.dateFashion(3, 1); // NO.
-		ps3.dateFashion(3, 2); // NO.
-		ps3.dateFashion(3, 3); // MAYBE.
-		ps3.dateFashion(3, 4); // MAYBE.
-		ps3.dateFashion(3, 5); // MAYBE.
-		ps3.dateFashion(3, 6); // MAYBE.
-		ps3.dateFashion(3, 7); // MAYBE.
-		ps3.dateFashion(3, 8); // YES.
-		ps3.dateFashion(3, 9); // YES.
-		ps3.dateFashion(3, 10); // YES.
-		ps3.dateFashion(4, 0); // NO.
-		ps3.dateFashion(4, 1); // NO.
-		ps3.dateFashion(4, 2); // NO.
-		ps3.dateFashion(4, 3); // MAYBE.
-		ps3.dateFashion(4, 4); // MAYBE.
-		ps3.dateFashion(4, 5); // MAYBE.
-		ps3.dateFashion(4, 6); // MAYBE.
-		ps3.dateFashion(4, 7); // MAYBE.
-		ps3.dateFashion(4, 8); // YES.
-		ps3.dateFashion(4, 9); // YES.
-		ps3.dateFashion(4, 10); // YES.
-		ps3.dateFashion(5, 0); // NO.
-		ps3.dateFashion(5, 1); // NO.
-		ps3.dateFashion(5, 2); // NO.
-		ps3.dateFashion(5, 3); // MAYBE.
-		ps3.dateFashion(5, 4); // MAYBE.
-		ps3.dateFashion(5, 5); // MAYBE.
-		ps3.dateFashion(5, 6); // MAYBE.
-		ps3.dateFashion(5, 7); // MAYBE.
-		ps3.dateFashion(5, 8); // YES.
-		ps3.dateFashion(5, 9); // YES.
-		ps3.dateFashion(5, 10); // YES.
-		ps3.dateFashion(6, 0); // NO.
-		ps3.dateFashion(6, 1); // NO.
-		ps3.dateFashion(6, 2); // NO.
-		ps3.dateFashion(6, 3); // MAYBE.
-		ps3.dateFashion(6, 4); // MAYBE.
-		ps3.dateFashion(6, 5); // MAYBE.
-		ps3.dateFashion(6, 6); // MAYBE.
-		ps3.dateFashion(6, 7); // MAYBE.
-		ps3.dateFashion(6, 8); // YES.
-		ps3.dateFashion(6, 9); // YES.
-		ps3.dateFashion(6, 10); // YES.
-		ps3.dateFashion(7, 0); // NO.
-		ps3.dateFashion(7, 1); // NO.
-		ps3.dateFashion(7, 2); // NO.
-		ps3.dateFashion(7, 3); // MAYBE.
-		ps3.dateFashion(7, 4); // MAYBE.
-		ps3.dateFashion(7, 5); // MAYBE.
-		ps3.dateFashion(7, 6); // MAYBE.
-		ps3.dateFashion(7, 7); // MAYBE.
-		ps3.dateFashion(7, 8); // YES.
-		ps3.dateFashion(7, 9); // YES.
-		ps3.dateFashion(7, 10); // YES.
-		ps3.dateFashion(8, 0); // NO.
-		ps3.dateFashion(8, 1); // NO.
-		ps3.dateFashion(8, 2); // NO.
-		ps3.dateFashion(8, 3); // YES.
-		ps3.dateFashion(8, 4); // YES.
-		ps3.dateFashion(8, 5); // YES.
-		ps3.dateFashion(8, 6); // YES.
-		ps3.dateFashion(8, 7); // YES.
-		ps3.dateFashion(8, 8); // YES.
-		ps3.dateFashion(8, 9); // YES.
-		ps3.dateFashion(8, 10); // YES.
-		ps3.dateFashion(9, 0); // NO.
-		ps3.dateFashion(9, 1); // NO.
-		ps3.dateFashion(9, 2); // NO.
-		ps3.dateFashion(9, 3); // YES.
-		ps3.dateFashion(9, 4); // YES.
-		ps3.dateFashion(9, 5); // YES.
-		ps3.dateFashion(9, 6); // YES.
-		ps3.dateFashion(9, 7); // YES.
-		ps3.dateFashion(9, 8); // YES.
-		ps3.dateFashion(9, 9); // YES.
-		ps3.dateFashion(9, 10); // YES.
-		ps3.dateFashion(10, 0); // NO.
-		ps3.dateFashion(10, 1); // NO.
-		ps3.dateFashion(10, 2); // NO.
-		ps3.dateFashion(10, 3); // YES.
-		ps3.dateFashion(10, 4); // YES.
-		ps3.dateFashion(10, 5); // YES.
-		ps3.dateFashion(10, 6); // YES.
-		ps3.dateFashion(10, 7); // YES.
-		ps3.dateFashion(10, 8); // YES.
-		ps3.dateFashion(10, 9); // YES.
-		ps3.dateFashion(10, 10); // YES.
-
-		/*System.out.println("Date Fashion: ");
+		System.out.println("Date Fashion: ");
 		ps3.dateFashion(5, 10);
 		ps3.dateFashion(5, 2);
 		ps3.dateFashion(5, 5);
@@ -190,7 +67,7 @@ public class ProblemSet3 {
 		System.out.println("Is Prime: ");
 		ps3.isPrime(11);
 		ps3.isPrime(17);
-		ps3.isPrime(112); */
+		ps3.isPrime(112);
 	}
 	
 	/*
@@ -251,7 +128,7 @@ public class ProblemSet3 {
 		} else if (str.charAt(0) == 'f') {
 			System.out.println("FIZZ.");
 		} else {
-			System.out.println(str + ".");
+			System.out.println(str);
 		} 
 	}
 	
@@ -356,9 +233,12 @@ public class ProblemSet3 {
 			b = 0;
 		} else if (a == b) {
 			a = 0;
+			b = 0;
 		} else if (b == c) {
 			b = 0;
+			c = 0;
 		} else if (a == c) {
+			a = 0;
 			c = 0;
 		} else {
 			sum = 0;
@@ -402,12 +282,13 @@ public class ProblemSet3 {
 	
 	public void factorialFor(int n) {
 		int total = 1;
+		int orig = n;
 		int rounds = n - 1;
 		for (int i = 0; i <= rounds; i++) {
 			total *= n;
 			n = n-1;
 		}
-		System.out.println(total + ".");
+		System.out.println(orig + "! = " + total + ".");
 	}
 	
 	/*
@@ -422,6 +303,7 @@ public class ProblemSet3 {
 	
 	public void factorialWhile(int n) {
 		int total = 1;
+		int orig = n;
 		int rounds = n - 1;
 		int i = 0;
 		while (i <= rounds) {
@@ -429,7 +311,7 @@ public class ProblemSet3 {
 			n = n-1;
 			i++;
 		}
-		System.out.println(total + ".");
+		System.out.println(orig + "! = " + total + ".");
 	}
 	
 	/*
@@ -443,6 +325,8 @@ public class ProblemSet3 {
 	
 	public void isPrime(int n) {
 		if (n == 1) {
+			System.out.println("NOT PRIME.");
+		} else if (n == 2) {
 			System.out.println("PRIME.");
 		} else if (n % 2 == 0 && n != 2) {
 			System.out.println("NOT PRIME.");
@@ -461,6 +345,14 @@ public class ProblemSet3 {
 		} else if (n % 19 == 0 && n != 19) {
 			System.out.println("NOT PRIME.");
 		} else if (n % 23 == 0 && n != 23) {
+			System.out.println("NOT PRIME.");
+		} else if (n % 29 == 0 && n != 29) {
+			System.out.println("NOT PRIME.");
+		} else if (n % 31 == 0 && n != 31) {
+			System.out.println("NOT PRIME.");
+		} else if (n % 37 == 0 && n != 37) {
+			System.out.println("NOT PRIME.");
+		} else if (n % 41 == 0 && n != 41) {
 			System.out.println("NOT PRIME.");
 		} else {
 			System.out.println("PRIME.");
